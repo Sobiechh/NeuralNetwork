@@ -28,7 +28,7 @@ tab1 = [
     [4,5,6]
 ]
 
-print(np.shape(tab1))
+#print(np.shape(tab1))
 
 tab2 = [
     [2,1],
@@ -38,7 +38,7 @@ tab2 = [
 
 wynik = np.dot(tab2, tab1)
 
-print(wynik)
+#print(wynik)
 
 inputs = [
     [1.0, 2.0, 3.0, 2.5],
@@ -71,4 +71,9 @@ layer1_outputs = np.dot(inputs, np.array(weights).T) + biases #we have to transp
 
 layer2_outputs = np.dot(layer1_outputs, np.array(weights2).T) + biases2
 
-print(layer2_outputs)
+#print(layer2_outputs)
+
+tab = [[1,2,3],[4,5,6],[7,8,9]]
+
+x = np.array(tab)
+print( x[:,0] ) ##!!
